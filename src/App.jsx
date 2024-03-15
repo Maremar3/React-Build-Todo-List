@@ -22,13 +22,7 @@ case ACTIONS.TOGGLE_TODO:
   case ACTIONS.DELETE_TODO:
     return todos.filter(todo=> todo.id !== action.payload.id)
 
-      // map(todo =>{
-      // if (todo.id === action.payload.id){
-  
-      //   return { ...todo, complete: !todo.complete}
-      // }
-      // return todo 
-    // })
+    
     default :
       return todos
 }
